@@ -4,7 +4,8 @@
   "description": "name            url         verb               desc.\r -------------------------------------------------------------\r index         /blogs           GET                show all blogs\r new           /blogs/new       GET                show form for creating new blog\r create        /blogs           POST               create new blog\r show          /blogs/:id       GET                show one particular blog\r edit          /blogs/:id/edit  GET                show form to edit one particular blog\r update        /blogs/:id       PUT                update blog\r destroy       /blogs/:id       delete             delete one particular blog",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app.js"
   },
   "keywords": [],
   "author": "",
