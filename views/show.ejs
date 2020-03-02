@@ -1,0 +1,40 @@
+<%- include("partials/header.ejs")%>
+<!-- <div class="ui main text container segment">
+    <div class="ui huge header center"><%=blog.title%></div>
+
+<img src="<%=blog.image%>" alt="">
+<span><%=blog.date.toDateString()%></span>
+<p><%=blog.body%></p>
+</div> -->
+
+
+<div class="ui main text container segment">
+    <!-- <div class="ui huge header center"><%=blog.title%></div> -->
+    <div class="ui olive message huge header"><%=blog.title%></div>
+
+        <div class="item">
+            <div >
+            <img class="ui centered medium rounded image" src="<%=blog.image%>">
+        </div>
+        </div>
+
+        <div class="content">
+            <div class="meta">
+              <span id="date"><%=blog.date.toDateString()%></span>
+            </div>
+            <div class="description">
+              <p><%-blog.body%></p>
+        </div>
+        <a class="ui inverted teal button" href="/blogs/<%=blog._id%>/edit">Update</a>
+        <form action="/blogs/<%=blog._id%>?_method=DELETE" method="POST">
+            <button class="ui inverted red button" >Delete</button>
+            </form>
+        
+       
+        
+
+
+  
+</div>
+
+<%- include("partials/footer.ejs")%>

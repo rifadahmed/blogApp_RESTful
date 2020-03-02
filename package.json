@@ -1,0 +1,20 @@
+{
+  "name": "blogApp_RESTful",
+  "version": "1.0.0",
+  "description": "name            url         verb               desc.\r -------------------------------------------------------------\r index         /blogs           GET                show all blogs\r new           /blogs/new       GET                show form for creating new blog\r create        /blogs           POST               create new blog\r show          /blogs/:id       GET                show one particular blog\r edit          /blogs/:id/edit  GET                show form to edit one particular blog\r update        /blogs/:id       PUT                update blog\r destroy       /blogs/:id       delete             delete one particular blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-sanitizer": "^1.0.5",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.9.2"
+  }
+}

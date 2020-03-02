@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs")%>
+<%blog.forEach(function(blog){%>
+<!-- <h1><%=blog.title%></h1>
+<img src="<%=blog.image%>" alt="">
+<span><%=blog.date.toDateString()%></span>
+<p><%=blog.body.slice(0,100)%>...<a href="/blogs/<%=blog._id%>">see more</a></p> -->
+<div class="ui divided container segment items">
+    
+    <div class="item">
+      <div class="image">
+        <img src="<%=blog.image%>">
+      </div>
+      <div class="content">
+        <a class="header"><%=blog.title%></a>
+        <div class="meta">
+          <span class="cinema"><%=blog.date.toDateString()%></span>
+        </div>
+        <div class="description">
+          <p><%=blog.body.slice(0,100)%></p>
+        </div>
+        <div class="extra">
+          <a class="ui right floated primary button" href="/blogs/<%=blog._id%>">
+            See More
+            <i class="right chevron icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<%})%>
+<%- include("partials/footer.ejs")%>
